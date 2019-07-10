@@ -2,19 +2,72 @@
 //
 
 #include <iostream>
+const int MAX_NUMBER_SCORES = 10;
+
+void fillArray(int a[], int size, int& numberUsed);
+
+double computeAverage(const int a[], int numberUsed);
+
+void showDifference(const int a[],int numberUsed);
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    using namespace std;
+    int score[MAX_NUMBER_SCORES], numberUsed;
+
+    cout << "This program reads golf scores and shows\n"
+        << "how much each differs from the average.\n";
+
+    cout << "Enter golf scores:\n";
+    fillArray(score, MAX_NUMBER_SCORES, numberUsed);
+    showDifference(score, numberUsed);
+
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+void fillArray(int a[], int size, int& numberUsed)
+{
+    using namespace std;
+    cout << "Enter up to " << size << " nnegative whole numbers.\n"
+        << "Mark the end of the list with a negative number.\n";
+    int next, index = 0;
+    while ((next >= 0) && (index < size))
+    {
+        a[index] = next;
+        index++;
+        cin >> next;
+    }
+    numberUsed = index;
+}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+double computeAverage(const int a[], int numberUsed)
+{
+    double total=0;
+    for(int index=0;index<numberUsed;index++)
+        total=total+a[index];
+    if (numberUsed>0)
+    {
+        return (total/numberUsed);
+
+    }
+    else
+    {
+        using namespace std;
+        cout << "ERROR: number of elements is 0 in computeAverage.\n"
+             << "computeAverage returns 0.\n";
+        return  0;
+    }
+}
+
+void showDifference(const int a[],int numberUsed)
+{
+    using namespace std;
+    double average = computeAverage(a,numberUsed);
+    cout << "Average of the " << numberUsed
+         << " scores = " <<average << endl
+         << "The scores are:\n";
+    for(int index = 0;index < numberUsed;index++)
+    cout << a[index] << " differs from average by "
+         << (a[index] - average) <<endl;
+}
+
