@@ -3,19 +3,48 @@
 
 #include "pch.h"
 #include <iostream>
+using namespace std;
+
+struct CDAccount
+{
+    double balance;
+    double interestRate;
+    int term;   //Months to maturity.
+};
+
+void getData(CDAccount& theAccount);
+
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    CDAccount account;
+    getData(account);
+
+    double rateFraction, interest;
+    rateFraction = account.interestRate / 100.0;
+    interest = account.balance * rateFraction * (account.term / 12.0);
+    account.balance = account.balance + interest;
+
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+    cout << "When your CD matures in "
+         << account.term << " months,\n"
+         << " it will have a balance of R"
+         << account.balance <<endl;
+
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+void getData(CDAccount& theAccount)
+{
+    cout << "Enter account balance: R";
+    cin >> theAccount.balance;
+    cout << "Enter account interest rate: ";
+    cin >> theAccount.interestRate;
+    cout << "Enter the number of months until maturity\n"
+         << "(must be 12 or fewer months): ";
+    cin >> theAccount.term;
+}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
