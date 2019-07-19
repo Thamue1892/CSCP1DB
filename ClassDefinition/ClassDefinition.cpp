@@ -8,20 +8,20 @@ class DayOfYear
 {
 public:
 	void input();
-	void output();
+	void output() const;
 
 	void set(int newMonth, int newDay);
 	//Precondition:newMonth and newDay form a possible date.
 	//Postcondition:The date is reset according to the arguments.
 
-	int getMonth();
+	int getMonth() const;
 	//Returns the month, 1 for January, 2 for February, etc.
 
-	int getDay();
+	int getDay() const;
 	//Returns the day of the month.
 
 private:
-	void checkDate();
+	void checkDate() const;
 	int month;
 	int day;
 };
@@ -59,13 +59,21 @@ void DayOfYear::input()
 	checkDate();
 }
 
-void DayOfYear::output()
+void DayOfYear::output() const
 {
 	cout << "month = " << month
 		<< ", day = " << day << endl;
 }
 
-void DayOfYear::checkDate()
+void DayOfYear::set(int newMonth, int newDay)
+{
+	month = newMonth;
+	day = newDay;
+
+	checkDate();
+}
+
+void DayOfYear::checkDate() const
 {
 	if ((month < 1) || (month > 12) || (day < 1) || (day > 31))
 	{
@@ -74,12 +82,12 @@ void DayOfYear::checkDate()
 	}
 }
 
-int DayOfYear::getMonth()
+int DayOfYear::getMonth() const
 {
 	return month;
 }
 
-int DayOfYear::getDay()
+int DayOfYear::getDay() const
 {
 	return day;
 }
