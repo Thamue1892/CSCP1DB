@@ -69,7 +69,6 @@ void DayOfYear::set(int newMonth, int newDay)
 {
 	month = newMonth;
 	day = newDay;
-
 	checkDate();
 }
 
@@ -79,6 +78,8 @@ void DayOfYear::checkDate() const
 	{
 		cout << "Illegal date. Aborting program.\n";
 		exit(1);
+
+
 	}
 }
 

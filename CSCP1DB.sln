@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Structures", "Structures\St
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassDefinition", "ClassDefinition\ClassDefinition.vcxproj", "{F475EF3A-E2CF-48E5-8D3F-FDD6E3C67B6C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BankAccountClass", "BankAccountClass\BankAccountClass.vcxproj", "{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{F475EF3A-E2CF-48E5-8D3F-FDD6E3C67B6C}.Release|x64.Build.0 = Release|x64
 		{F475EF3A-E2CF-48E5-8D3F-FDD6E3C67B6C}.Release|x86.ActiveCfg = Release|Win32
 		{F475EF3A-E2CF-48E5-8D3F-FDD6E3C67B6C}.Release|x86.Build.0 = Release|Win32
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Debug|x64.ActiveCfg = Debug|x64
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Debug|x64.Build.0 = Debug|x64
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Debug|x86.ActiveCfg = Debug|Win32
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Debug|x86.Build.0 = Debug|Win32
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Release|x64.ActiveCfg = Release|x64
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Release|x64.Build.0 = Release|x64
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Release|x86.ActiveCfg = Release|Win32
+		{AC1CCA31-9EE9-4CC7-AA6A-7F799F9FF9BE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
