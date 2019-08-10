@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Question_1", "Question_1\Qu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BankAcountADT", "BankAcountADT\BankAcountADT.vcxproj", "{06D68E78-6F57-46CA-A186-C9C94D830663}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntroToInheritance", "IntroToInheritance\IntroToInheritance.vcxproj", "{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{06D68E78-6F57-46CA-A186-C9C94D830663}.Release|x64.Build.0 = Release|x64
 		{06D68E78-6F57-46CA-A186-C9C94D830663}.Release|x86.ActiveCfg = Release|Win32
 		{06D68E78-6F57-46CA-A186-C9C94D830663}.Release|x86.Build.0 = Release|Win32
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Debug|x64.ActiveCfg = Debug|x64
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Debug|x64.Build.0 = Debug|x64
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Debug|x86.Build.0 = Debug|Win32
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Release|x64.ActiveCfg = Release|x64
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Release|x64.Build.0 = Release|x64
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Release|x86.ActiveCfg = Release|Win32
+		{EC6F485E-F1BF-4FAF-B859-F74C7C27DDAB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
