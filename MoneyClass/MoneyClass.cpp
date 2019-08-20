@@ -9,11 +9,11 @@ using namespace std;
 class Money
 {
 public:
-	friend Money add(Money amount1, Money amount2);
+	friend Money add(const Money amount1, const Money amount2);
 	//Precondition:amount1 and amount2 have been given values.
 	//Returns the sum of the values of amount1 and amount2.
 
-	friend bool equal(Money amount1, Money amount2);
+	friend bool equal(const Money amount1, const Money amount2);
 	//Precondition:amount1 and amount2 have been given values.
 	//Returns true if the amount1 and amount2 have the same value.
 	//otherwise returns false
@@ -78,7 +78,7 @@ int main()
 
 }
 
-Money add(Money amount1, Money amount2)
+Money add(const Money amount1, const Money amount2)
 {
 	Money temp;
 
@@ -86,7 +86,7 @@ Money add(Money amount1, Money amount2)
 	return temp;
 }
 
-bool equal(Money amount1, Money amount2)
+bool equal(const Money amount1, const Money amount2)
 {
 	return (amount1.allCents == amount2.allCents);
 }
