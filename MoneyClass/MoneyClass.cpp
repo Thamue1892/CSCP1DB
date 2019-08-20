@@ -101,6 +101,10 @@ Money::Money(long dollars, int cents)
 	allCents = dollars * 100 + cents;
 }
 
+Money::Money(long dollars) :allCents(dollars*100)
+{
+}
+
 Money::Money() :allCents(0)
 {
 
