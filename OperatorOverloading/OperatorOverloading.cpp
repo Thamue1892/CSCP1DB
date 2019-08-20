@@ -10,7 +10,7 @@ class Money
 {
 public:
 	friend  Money operator +(const Money& amount1, const Money& amount2);
-	friend  Money operator ==(const Money& amount1, const Money& amount2);
+	friend  bool operator ==(const Money& amount1, const Money& amount2);
 
 	Money(long dollars, int cents);
 	Money(long dollars);
@@ -44,10 +44,10 @@ int main()
 	total.output(cout);
 	cout << endl;
 
-	/*if (cost == tax)
+	if (cost == tax)
 		cout << "Move to another state.\n";
 	else
-		cout << "Things seem normal.\n";*/
+		cout << "Things seem normal.\n";
 
 	return 0;
 }
@@ -143,7 +143,7 @@ Money operator +(const Money& amount1, const Money& amount2)
 	return temp;
 }
 
-Money operator ==(const Money& amount1, const Money& amount2)
+bool operator ==(const Money& amount1, const Money& amount2)
 {
 	return (amount1.allCents == amount2.allCents);
 }
