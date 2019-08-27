@@ -108,7 +108,7 @@ void Money::input(istream& ins)
 	cents = digitToInt(digit1) * 10 + digitToInt(digit2);
 
 	allCents = dollars * 100 + cents;
-	if (negative)
+	if (negative)									
 		allCents = -allCents;
 }
 
