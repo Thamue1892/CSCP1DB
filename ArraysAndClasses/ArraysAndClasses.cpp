@@ -73,11 +73,11 @@ Money::Money(long dollars, int cents)
 	allCents = dollars * 100 + cents;
 }
 
-Money::Money(long dollars) :allCents(dollars*100)
+Money::Money(long dollars) :allCents(dollars * 100)
 {
 }
 
-Money::Money() :allCents(0)
+Money::Money() : allCents(0)
 {
 
 }
@@ -147,10 +147,10 @@ ostream& operator<<(ostream& outs, Money& amount)
 
 int main()
 {
-	Money amount[5], max;
+	Money amount[5];
 	int i;
 
-	cout << "Enter 5 amounts of money:\n";
+	/*cout << "Enter 5 amounts of money:\n";
 	cin >> amount[0];
 	max = amount[0];
 
@@ -172,6 +172,24 @@ int main()
 	{
 		cout << amount[i] << " off by "
 			<< difference[i] << endl;
+	}*/
+
+	cout << "Enter 5 amounts of money:\n";
+	for (i = 0; i < 5; i++)
+	{
+		cin >> amount[i];
+
+	}
+
+	for (i = 0; i < 5; i++)
+	{
+		amount[i] = amount[i] + amount[i];
+	}
+
+	cout << "The amounts doubled are: " << endl;
+	for (i = 0; i < 5; i++)
+	{
+		cout << amount[i] << endl;
 	}
 
 	return 0;
