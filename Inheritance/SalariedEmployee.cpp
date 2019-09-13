@@ -26,28 +26,18 @@ namespace employeethaymes
 		salary=newSalary;
 	}
 
-	/*void SalariedEmployee::printCheck()
-	{
-		setNetPay(salary);
-		cout << "\n______________________________________\n";
-		cout << "Pay to the order of "<<getName() <<endl;
-		cout << "The sum of " <<getNetPay() <<" Dollars\n";
-		cout << "\n______________________________________\n";
-		cout << "Check Stub NOT NEGOTIABLE \n";
-	}*/
-
 	void SalariedEmployee::printCheck()
 	{
 		setNetPay(salary);
-		cout << "\n______________________________________\n";
+		cout << "\n__________________________________________________\n";
 		cout << "Pay to the order of "<<getName() <<endl;
 		cout << "The sum of " <<getNetPay() <<" Dollars\n";
-		cout << "\n______________________________________\n";
-		cout << "Check Stub NOT NEGOTIABLE \n";
+		cout << "\n__________________________________________________\n";
+		cout << "Check Stub: NOT NEGOTIABLE \n";
 		cout << "Employee Number: " << getSSN()<<endl;
 		cout <<"Salaried Employee. Regular Pay: "
 			 << salary <<endl;
-		cout << "\n______________________________________\n";
+		cout << "\n__________________________________________________\n";
 
 	}
 
