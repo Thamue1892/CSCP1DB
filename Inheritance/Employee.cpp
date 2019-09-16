@@ -51,7 +51,7 @@ namespace employeethaymes
 	{
 		cout << "\nError printCheck FUNCTION CALLED FOR AN \n"
 			 << "UNDEFFERENTIATED EMPLOYEE. Aborting the program.\n"
-			 << "Check with the autor of the program about this bug. \n";
+			 << "Check with the author of the program about this bug. \n";
 
 		exit(1);
 	}

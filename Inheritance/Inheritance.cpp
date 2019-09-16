@@ -25,6 +25,7 @@ int main()
 	cout <<"Check for " <<boss.getName()<<endl;
 	boss.printCheck();
 
+
 	return 0;
 
 }
