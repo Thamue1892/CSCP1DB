@@ -18,5 +18,19 @@
     <ClCompile Include="VirtualFunctionsInC++.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscountSale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscountSale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
